@@ -1,0 +1,115 @@
+1. make objects
+	A. Initialize the program
+	B. Initialize the screen
+	C. Initialize the JPanel
+
+2. set size of 2d array 
+	A. Get the width
+	B. Get the height
+	C. Set up 2D array
+*set up bootstrap later
+3. (first row is a wall as it is the outer edge,
+4. left column is a wall as it is the outer edge,
+5. right column is a wall as it is the outer edge, 
+6. last row is a wall as it is the outer edge)
+* as this is being set up make one an opening as it 
+* will be the start of the maze.
+
+7. randomize the rest of the 2d array
+	A. Set up randomize
+	B. Set up variable with percentage point
+	C. Set up counter and compare with previous var.
+8. set up a depth first search to check
+9. change the easiest section.
+
+
+import.java.Math.*;
+
+some shitty start object
+int width = screen.getWidth();
+int height = screen.getHeight();
+int maze[width][height];
+int x = width - 1;
+int y = height - 1;
+
+for (int i : maze[i][0]) {
+	maze[i][0] = 1;
+	}
+	
+for (int j : maze[0][j]) {
+	maze[0][j] = 1; 
+	}
+	
+for (int j : maze[-1][j]) {
+	maze[x][j] = 1; 
+	}
+	
+for (int i : maze[i][0]) {
+	maze[i][y] = 1;
+	}
+	
+int counter = 0;
+int level = .3;
+isallscool();
+
+int begin = maze[Math.random(0, width)][0, height];
+begin = 9;
+
+int end = maze[Math.random(0, width)][0, height];
+end = 99;
+
+public static array resetEnd(array[][] maze, int begin, int end){
+	if (begin.getWidth() == end.getWidth()
+		&& begin.getHeight() == end.getHeight()){
+			int end = maze[Math.random(0, width)][0, height];
+			end = 99;
+	}else{break;}
+
+}	
+
+public static array isallscool (array[][] maze, int counter){
+	for (int i, j: maze[i][j]){
+		if (maze[i][j] = 1){
+			continue;
+		}
+		
+		int comp += Math.random(0,1);
+		maze[i][j] = comp;
+	}
+	if ((comp * level) < 30){
+		toomuch(maze, 0, level);
+	}
+	
+	
+	if ((comp * level) > 70){
+		isallscool(maze, 0, level);
+	}
+}	
+
+public static array toomuch (array[][] maze, int counter) {
+	for (int i, j: maze[i][j]){
+		if (maze[i][j] = 0){
+			continue;
+		}
+		
+		int comp += Math.random(0,1);
+		maze[i][j] = comp;
+	}
+	if ((comp * level) < 30){
+		toomuch(maze, 0, level);
+	}
+	
+	
+	if ((comp * level) > 70){
+		isallscool(maze, 0, level);
+	}
+	
+}
+	
+
+public static array end (array[][] maze, array[][] begin, array[][] end){
+	
+}
+
+
+	
